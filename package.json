@@ -3,18 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://seshagopalN.github.io/contact-manager",
+  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preDeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-    {
-    "homepage": "https://github.com/seshagopalN/contact-manager",
-    "script" : {
-      "preDeploy": "npm run build",
-      "deploy": "gh-pages -d build"
-    },
+    
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
@@ -38,3 +37,4 @@
     "vite": "^7.1.2"
   }
 }
+
